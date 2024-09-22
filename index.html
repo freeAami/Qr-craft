@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Craft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Craft</h1>
+        <p class="credit">Made by Ammar Jeevunjee</p>
+        
+        <form id="qrForm">
+            <select id="qrType">
+                <option value="vcard">V-card</option>
+                <option value="link">Link</option>
+                <option value="email">E-mail</option>
+                <option value="phone">Call</option>
+                <option value="sms">SMS</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="wifi">Wi-Fi</option>
+            </select>
+
+            <div id="dynamicFields"></div>
+
+            <button type="submit">Craft QR Code</button>
+        </form>
+
+        <div id="qrCodeContainer"></div>
+
+        <button id="downloadBtn" style="display: none;">Download QR Code</button>
+    </div>
+
+    <button id="infoBtn">i</button>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About QR Craft</h2>
+            <p>QR Craft is a versatile QR code generator that allows you to create various types of QR codes including contact information, links, emails, phone numbers, SMS, WhatsApp messages, and Wi-Fi credentials. Simply select the type of QR code you need, fill in the details, and craft your custom QR code in seconds! - Ammar :D</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
